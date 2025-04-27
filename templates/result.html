@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Result</h1>
+  {% if result == 'correct' %}
+    <p>Correct! Excellent work.</p>
+  {% else %}
+    <p>Incorrect. Review the concepts and try again.</p>
+  {% endif %}
+  <a href="{{ url_for('game') }}">Next Question</a>
+{% endblock %}
